@@ -1,4 +1,4 @@
-# lanmining
+# sentminer
 
 Este aplicativo será um módulo (add-on) para o Anki que automatizará o processo
 de mineração de frases em outros idiomas.
