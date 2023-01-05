@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "anki-sentence-miner"
+name = "sentminer"
 version = "0.1.0"
 description = "Anki add-on for mining sentences in several languages. Just enter the doubtful word and receive the phonetic transcription, some sentences and images to choose from."
 authors = ["Jonathan Silva <jonathan.silva@smar.com.br>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "anki_sentence_miner"}]
+packages = [{include = "sentminer"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
