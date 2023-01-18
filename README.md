@@ -44,29 +44,30 @@
     <a href="#-contato">Contato</a>
 </details>
 
-## 📃 Sobre o Projeto
+## 📃 About the project
 
 <table>
   <tr>
     <td>
-    Este aplicativo será um módulo (add-on) para o Anki que automatizará o processo de mineração de frases em outros idiomas.
-    O funcionamento será colocar uma palavra no software, e devolver as 10 melhores frases a tradução, transcrição fonética e fornecer imagens para escolha.
+    This software is an Anki add-on that automate the english sentences mineration.
+    For now, the functionality
+    The operation will be to put a word in the software, and return the 10 best phrases for translation, phonetic transcription and provide images to choose from. In sequence, automatically generate an audio with HypperTTS or AwesomeTTS.
     </td>
   </tr>
 </table>
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-Se você quer contribuir com este projeto e aprimorá-lo, sua ajuda é sempre bem vinda! Por favor, leia as [diretrizes de contribuição][1] para contribuir corretamente. :tada:
+If you want to contribute to this project and improve it, your help is always welcome! Please read the [contribution guidelines][1] to properly contribute. :tada:
 
 <!-- MIT LICENSE -->
 <a href="https://github.com/JonathanTSilva/HL-Linux/blob/main/LICENSE"><img width="100px" src="https://miro.medium.com/max/886/1*C87EjxGeMPrkTuVRVWVg4w.png" align="right" /></a>
 
-## 📝 Licença
+## 📝 License
 
-Distribuída por **MIT License**. Veja [LICENSE][2] para mais informações.
+Distributed by **MIT License**. See [LICENSE][2] for more information.
 
-## 📧 Contato
+## 📧 Contact
 
 :globe_with_meridians: [Jonathan T. da Silva][3] <br>
 :email: jonathantobias2009@hotmail.com <br>
