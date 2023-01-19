@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "sentminer"
 version = "0.1.0"
-description = "Anki add-on for mining sentences in several languages. Just enter the doubtful word and receive the phonetic transcription, some sentences and images to choose from."
+description = "Anki add-on for mining sentences in english. Just enter the doubtful word and receive the phonetic transcription, some sentences and images to choose from."
 authors = ["Jonathan Silva <jonathan.silva@smar.com.br>"]
 license = "MIT"
 readme = "README.md"

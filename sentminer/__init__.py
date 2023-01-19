@@ -2,52 +2,26 @@
 Add-on package initialization.
 """
 
-import aqt
+# import the main window object (mw) from aqt
+from aqt import mw
+# import the "show info" tool from utils.py
+from aqt.utils import showInfo, qconnect
+# import all of the Qt GUI library
+from aqt.qt import *
 
-__all__ = ['editor_button']
+# We're going to add a menu item below. First we want to create a function to
+# be called when the menu item is activated.
 
-def editor_button():
-    """
-    Enable the sentence mining through the editor,
-    which is present in the "Add" and browser windows.
-    """
+def testFunction() -> None:
+    # get the number of cards in the current collection, which is stored in
+    # the main window
+    cardCount = mw.col.cardCount()
+    # show a message box
+    showInfo("Card count: %d" % cardCount)
 
-    
-
-    # def createAwesomeTTSEditorLambda():
-    #     def launch(editor):
-    #         editor_generator = gui.EditorGenerator(editor=editor,
-    #                                                addon=addon,
-    #                                                alerts=aqt.utils.showWarning,
-    #                                                ask=aqt.utils.getText,
-    #                                                parent=editor.parentWindow)
-    #         editor_generator.show()
-    #     return launch
-
-    # def addAwesomeTTSEditorButton(buttons, editor):
-    #     new_button = editor.addButton(gui.ICON_FILE,
-    #         'AwesomeTTS',
-    #         createAwesomeTTSEditorLambda(),
-    #         tip = "Record and insert an audio clip here w/ AwesomeTTS")
-    #     buttons.append(new_button)
-    #     return buttons
-
-    # aqt.gui_hooks.editor_did_init_buttons.append(addAwesomeTTSEditorButton)
-
-    # def createAwesomeTTSEditorShortcutLambda(editor):
-    #     def launch():
-    #         editor_generator = gui.EditorGenerator(editor=editor,
-    #                                                addon=addon,
-    #                                                alerts=aqt.utils.showWarning,
-    #                                                ask=aqt.utils.getText,
-    #                                                parent=editor.parentWindow)
-    #         editor_generator.show()
-    #     return launch
-
-    # def editor_init_shortcuts(shortcuts, editor: aqt.editor.Editor):
-    #     shortcut_sequence = sequences['editor_generator'].toString()
-    #     lambda_function = createAwesomeTTSEditorShortcutLambda(editor)
-    #     shortcut_entry = (shortcut_sequence, lambda_function, True)
-    #     shortcuts.append(shortcut_entry)
-
-    # aqt.gui_hooks.editor_did_init_shortcuts.append(editor_init_shortcuts)
+# create a new menu item, "test"
+action = QAction("Sentminer: Options", mw)
+# set it to call testFunction when it's clicked
+qconnect(action.triggered, testFunction)
+# and add it to the tools menu
+mw.form.menuTools.addAction(action)

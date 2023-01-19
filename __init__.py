@@ -5,7 +5,7 @@ Performs any migration tasks and then loads the 'sentminer' package.
 """
 
 from sys import stderr
-
+from . import sentminer
 
 if __name__ == "__main__":
     stderr.write(
