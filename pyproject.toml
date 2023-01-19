@@ -13,6 +13,11 @@ mypy = "^0.991"
 aqt = "^2.1.55"
 
 
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.11.4"
+prospector = "^1.7.7"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
