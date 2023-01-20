@@ -2,26 +2,20 @@
 Add-on package initialization.
 """
 
-# import the main window object (mw) from aqt
-from aqt import mw
-# import the "show info" tool from utils.py
-from aqt.utils import showInfo, qconnect
-# import all of the Qt GUI library
-from aqt.qt import *
+from aqt.utils import showInfo
+from anki.hooks import addHook
 
-# We're going to add a menu item below. First we want to create a function to
-# be called when the menu item is activated.
+from .paths import ICONS
 
-def testFunction() -> None:
-    # get the number of cards in the current collection, which is stored in
-    # the main window
-    cardCount = mw.col.cardCount()
-    # show a message box
-    showInfo("Card count: %d" % cardCount)
+# cross out the currently selected text
+def on_strike(editor):
+    editor.web.eval("wrap('<del>', '</del>');")
 
-# create a new menu item, "test"
-action = QAction("Sentminer: Options", mw)
-# set it to call testFunction when it's clicked
-qconnect(action.triggered, testFunction)
-# and add it to the tools menu
-mw.form.menuTools.addAction(action)
+def add_my_button(buttons, editor):
+    editor._links['strike'] = on_strike
+    return buttons + [editor._addButton(
+        f"{ICONS}/sentminer_logo_crop.ico",
+        "strike",
+        "Mining sentence in English and insert here with Sentminer")]
+
+addHook("setupEditorButtons", add_my_button)
