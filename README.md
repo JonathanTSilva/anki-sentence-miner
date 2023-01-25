@@ -76,5 +76,6 @@ Distributed by **MIT License**. See [LICENSE][2] for more information.
 <!-- MARKDOWN LINKS -->
 <!-- SITES -->
 [1]: Docs/CONTRIBUTING.md
+[2]: LICENSE
 
 <!-- IMAGES -->
