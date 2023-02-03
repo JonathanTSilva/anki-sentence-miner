@@ -1,4 +1,5 @@
 {
+    "version": 0.1,
     "type": "object",
     "properties": {
         "display_name": {
@@ -75,5 +76,28 @@
         "author",
         "conflicts",
         "targets"
+    ],
+    "right_buttons": [
+        {
+            "type": "javascript",
+            "icon": "action-undo.svg",
+            "tip": "Undo",
+            "script": "document.execCommand('undo', false, null);",
+            "keys": "ctrl+z"
+        },
+        {
+            "type": "javascript",
+            "icon": "action-redo.svg",
+            "tip": "Redo",
+            "script": "document.execCommand('redo', false, null);",
+            "keys": "ctrl+shift+z"
+        },
+        {
+            "type": "insert",
+            "label": "span.example",
+            "tip": "Other grammar",
+            "before": "<span class='example'>",
+            "after": "</span>"
+        }
     ]
 }
