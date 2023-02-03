@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">
   <br>
-  <a href="https://github.com/JonathanTSilva/sentminer"><img src="./Images/logo-sentminer.png" alt="Logo" width="200"></a>
+  <a href="https://github.com/JonathanTSilva/sentminer"><img src="./sentminer/gui/icons/sentminer_logo_crop.png" alt="Logo" width="200"></a>
   <br>
   sentminer
   <br>
