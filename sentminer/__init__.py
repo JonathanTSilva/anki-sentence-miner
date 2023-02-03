@@ -17,11 +17,11 @@ def test_function() -> None:
     cardCount = mw.col.cardCount()
     showInfo("Card count: %d" % cardCount)
 
-def add_my_button(buttons, editor):
-    editor._links['strike'] = on_strike
+def add_sentminer_button(buttons, editor):
+    editor._links['strike'] = test_function
     return buttons + [editor._addButton(
         f"{ICONS}/sentminer_logo_crop.ico",
         "strike",
         "Mining sentence in English and insert here with Sentminer")]
 
-addHook("setupEditorButtons", add_my_button)
+addHook("setupEditorButtons", add_sentminer_button)
