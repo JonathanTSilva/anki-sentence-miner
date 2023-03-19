@@ -9,7 +9,7 @@
 
 <h4 align="center">
   
-🛠 sentminer is a sentence miner add-on for Anki.
+🛠 [DEVELOPMENT] sentminer is a sentence miner add-on for Anki.
   
 </h4>
 
